@@ -1,35 +1,40 @@
-# 🏎️ Car Racing Game
+# 🏎️ 3D Car Racing Game
 
-A simple, fun browser-based car racing game built with HTML5 Canvas, CSS, and vanilla JavaScript.
+A fun **3D browser-based car racing game** built with **Three.js** + vanilla JavaScript.
 
 ## How to Play
 
-1. Open `index.html` in your browser
-2. Click **Start Game**
-3. Use **Left/Right Arrow keys** or **A/D** to dodge the oncoming cars
-4. Survive as long as possible and beat your high score!
+1. Open `index.html` in your browser (or use a local server)
+2. Click **Start Game** or press **Space**
+3. Use **← →** Arrow keys or **A / D** to steer
+4. Dodge the other cars and survive as long as possible!
 
 ## Features
 
-- Smooth controls
-- Increasing difficulty over time
+- Real 3D graphics with Three.js
+- Dynamic camera that follows your car
+- Increasing speed & difficulty
 - High score saved in localStorage
-- Clean, modern dark UI
-- No dependencies — pure HTML/CSS/JS
+- Shadows & lighting
+- No build step required
 
 ## Controls
 
 | Key | Action |
 |-----|--------|
-| ← / A | Move left |
-| → / D | Move right |
+| ← / A | Steer left |
+| → / D | Steer right |
+| Space | Start game |
 
 ## Run Locally
 
-Just open the `index.html` file in any modern browser. No build step required.
-
 ```bash
-# Or serve with a simple local server
+# Just open the file
+start index.html          # Windows
+open index.html          # Mac
+xdg-open index.html      # Linux
+
+# Or better – use a local server
 python -m http.server 8000
 # then open http://localhost:8000
 ```
@@ -38,10 +43,10 @@ python -m http.server 8000
 
 ```
 car-game/
-├── index.html   # Main page
-├── style.css    # Styles
-├── game.js      # Game logic
-└── README.md    # This file
+├── index.html   # Main page + Three.js CDN
+├── style.css    # UI styles
+├── game.js      # 3D game logic
+└── README.md
 ```
 
-Enjoy the game! 🚗
+Enjoy the 3D race! 🚗🏎️
