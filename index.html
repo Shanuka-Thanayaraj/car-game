@@ -24,8 +24,21 @@
       </div>
     </div>
 
-    <div id="message">Press <kbd>SPACE</kbd> or click Start</div>
+    <div class="bottom-bar">
+      <div class="health-box">
+        <span class="label">ARMOR</span>
+        <div id="health-bars">
+          <div class="h-bar"></div><div class="h-bar"></div><div class="h-bar"></div>
+        </div>
+      </div>
 
+      <div class="nitro-box">
+        <span class="label">NITRO</span>
+        <div id="nitro-track"><div id="nitro-fill"></div></div>
+      </div>
+    </div>
+
+    <div id="message">Press <kbd>SPACE</kbd> to start &nbsp;|&nbsp; <kbd>Shift</kbd> Nitro</div>
     <button id="startBtn">START RACE</button>
   </div>
 
@@ -33,7 +46,15 @@
     <div class="go-content">
       <h2>CRASHED!</h2>
       <p class="final-score">Score: <span id="finalScore">0</span></p>
+      <p class="tip">Tip: Use nitro (Shift) to escape tight spots</p>
       <button id="restartBtn">RACE AGAIN</button>
+    </div>
+  </div>
+
+  <div id="pauseMenu" class="hidden">
+    <div class="go-content">
+      <h2>PAUSED</h2>
+      <button id="resumeBtn">RESUME</button>
     </div>
   </div>
 
