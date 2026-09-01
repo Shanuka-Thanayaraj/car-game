@@ -1,22 +1,19 @@
-# 🏎️ 3D Car Racing Game
+# 🏎️ Turbo Drift – 3D Car Racing
 
-A fun **3D browser-based car racing game** built with **Three.js** + vanilla JavaScript.
-
-## How to Play
-
-1. Open `index.html` in your browser (or use a local server)
-2. Click **Start Game** or press **Space**
-3. Use **← →** Arrow keys or **A / D** to steer
-4. Dodge the other cars and survive as long as possible!
+An impressive **3D browser racing game** built with Three.js.
 
 ## Features
 
-- Real 3D graphics with Three.js
-- Dynamic camera that follows your car
-- Increasing speed & difficulty
-- High score saved in localStorage
-- Shadows & lighting
-- No build step required
+- Detailed 3D cars with metal materials, glass, headlights & spoilers
+- Rotating wheels
+- Exhaust particle effects
+- Roadside trees, street lamps with real lights
+- Distant mountains & atmospheric fog
+- Cinematic camera follow
+- Smooth steering with body roll
+- Live speedometer (KM/H)
+- Increasing difficulty
+- High score system
 
 ## Controls
 
@@ -24,29 +21,21 @@ A fun **3D browser-based car racing game** built with **Three.js** + vanilla Jav
 |-----|--------|
 | ← / A | Steer left |
 | → / D | Steer right |
-| Space | Start game |
+| Space | Start race |
 
-## Run Locally
+## How to Run
 
 ```bash
-# Just open the file
-start index.html          # Windows
-open index.html          # Mac
-xdg-open index.html      # Linux
+git pull
+start index.html
+```
 
-# Or better – use a local server
+Or with a local server:
+
+```bash
 python -m http.server 8000
-# then open http://localhost:8000
 ```
 
-## Project Structure
+Then open **http://localhost:8000**
 
-```
-car-game/
-├── index.html   # Main page + Three.js CDN
-├── style.css    # UI styles
-├── game.js      # 3D game logic
-└── README.md
-```
-
-Enjoy the 3D race! 🚗🏎️
+Enjoy the race!
