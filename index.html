@@ -3,25 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Car Racing Game</title>
+  <title>Turbo Drift - 3D Racing</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Three.js via CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-  <div id="ui">
-    <div class="score-board">
-      <span>Score: <span id="score">0</span></span>
-      <span>High Score: <span id="highScore">0</span></span>
+  <div id="hud">
+    <div class="top-bar">
+      <div class="score-box">
+        <span class="label">SCORE</span>
+        <span id="score">0</span>
+      </div>
+      <div class="speed-box">
+        <span id="speed">0</span>
+        <span class="unit">KM/H</span>
+      </div>
+      <div class="score-box">
+        <span class="label">BEST</span>
+        <span id="highScore">0</span>
+      </div>
     </div>
-    <div id="message">Press <b>SPACE</b> or click <b>Start</b> to play</div>
-    <button id="startBtn">Start Game</button>
+
+    <div id="message">Press <kbd>SPACE</kbd> or click Start</div>
+
+    <button id="startBtn">START RACE</button>
   </div>
 
   <div id="gameOver" class="hidden">
-    <h2>Game Over!</h2>
-    <p>Your Score: <span id="finalScore">0</span></p>
-    <button id="restartBtn">Play Again</button>
+    <div class="go-content">
+      <h2>CRASHED!</h2>
+      <p class="final-score">Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">RACE AGAIN</button>
+    </div>
   </div>
 
   <script src="game.js"></script>
