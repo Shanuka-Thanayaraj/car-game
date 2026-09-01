@@ -1,41 +1,50 @@
-# 🏎️ Turbo Drift – 3D Car Racing
+# 🏎️ Turbo Drift – Full 3D Racing Game
 
-An impressive **3D browser racing game** built with Three.js.
+A feature-rich 3D browser racing game built with Three.js.
 
 ## Features
 
-- Detailed 3D cars with metal materials, glass, headlights & spoilers
-- Rotating wheels
-- Exhaust particle effects
-- Roadside trees, street lamps with real lights
-- Distant mountains & atmospheric fog
-- Cinematic camera follow
-- Smooth steering with body roll
-- Live speedometer (KM/H)
+- Detailed 3D cars with metal materials, glass, lights & spoilers
+- Rotating wheels + exhaust particles
+- **Nitro boost** (hold Shift)
+- **Armor system** (3 hits before game over)
+- **Power-ups**: Nitro refill, Shield, Score bonus
+- Pause menu (Esc)
+- Sound effects
+- Cinematic camera with FOV boost effect
+- Roadside trees, lamps, mountains, fog
 - Increasing difficulty
-- High score system
+- High score saving
 
 ## Controls
 
 | Key | Action |
-|-----|--------|
+|-----------|--------------------|
 | ← / A | Steer left |
 | → / D | Steer right |
+| Shift | Nitro boost |
 | Space | Start race |
+| Esc | Pause / Resume |
 
-## How to Run
+## Power-ups
+
+- 💧 **Blue** – Full nitro refill
+- 🛡️ **Green** – Shield + 1 armor
+- ⭐ **Yellow** – +100 score
+
+## Run
 
 ```bash
 git pull
 start index.html
 ```
 
-Or with a local server:
+or
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open **http://localhost:8000**
+Open **http://localhost:8000**
 
 Enjoy the race!
